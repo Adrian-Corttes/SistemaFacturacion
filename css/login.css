@@ -1,0 +1,85 @@
+@import url(../sistema/fonts/GothamBook.css);
+@import url(../sistema/fonts/GothamBold.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    font-family: Tahoma,sans-serif;
+    font-size: 25pt;
+    letter-spacing: 1px;
+    width: 100%;
+    background: #000000;
+    opacity: 0.9;
+    padding: 15px;
+    color:#FFF;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+#container{
+    background: url(../img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #container form{
+        background: #FFF;
+        width: 400px;
+        padding: 10px;
+        border: solid 1px #CCC;
+        
+    }
+    #container form img{
+        margin: 15px auto;
+        text-align: center;
+        display: block;
+    }
+    #container form input{
+        width: 90%;
+        padding: 5px;
+        font-size: 16pt;
+        display: block;
+        margin: 25px auto;
+        border-radius: 5px;
+        border: 1px solid #85929e;
+        text-align: center;
+    }
+    #container form input[type="submit"]{
+        background: #000000 ;
+        padding: 10px;
+        color: #FFF;
+        letter-spacing: 1px;
+        border: 0;
+        cursor: pointer;
+    }
+    #container form input[type='submit']:hover{
+        background: #ccc ;
+        color: #000000;
+        border: solid 1px #85929e;
+    }
+    .alert{
+        font-family: 'tahoma';
+        font-size: 16px;
+        text-align: center;
+    }
+    
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 8/01/2020, 10:38:03 PM
+    Author     : Adrian Cortes
+*/
+

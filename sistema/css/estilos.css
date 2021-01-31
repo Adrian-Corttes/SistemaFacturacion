@@ -1,0 +1,460 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/fondo.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GothamBook';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 26px;
+    color: #FFF;
+    
+}
+#h1{
+    margin-left: 70%;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+}
+h5{
+    font-size: 14px;
+}
+h6{
+    font-size: 12px;
+}
+p{
+    font-family: 'GothamBook';
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+span {
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+.header{
+    color: #FFF;
+    background:  #000000;
+    opacity: 0.7;
+    height: 35px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+    width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+nav ul{
+    opacity: 0.7;
+    background: #85929e;
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+nav ul > li a{
+    position: relative;
+}
+nav a{
+    color: #000000;
+    display: block;
+    font-size: 10pt;
+    font-family: 'GothamBook';
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+    border-right: 1px solid #FFF;
+}
+nav .principal > a{
+    background: url(../images/arrow_bottom.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav li ul{
+    background: #85929e;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 0 0 10px 10px;
+}
+nav li ul a{
+    position: relative;
+    padding: 10px 30px;
+    border-right: initial;
+}
+nav li ul a:hover{
+    background: #FFF;
+}
+nav li ul li:last-child{
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+#container{
+    padding: 90px 15px 15px;
+}
+/**************************Registro_Usuarios***************************************/
+.form_register{
+    width: 450px;
+    margin: auto;
+}
+.form_register h1{
+    color: #FFF;
+    text-align:center;
+}
+hr{
+    border: 0;
+    background: #CCC;
+    height: 1px;
+    margin: 10px;
+    display: block;
+}
+form{
+    background: #FFF;
+    opacity: 0.8;
+    margin: auto;
+    padding: 20px 50px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    font-size: 12pt;
+    font-family: 'Gothambook';
+    margin: 15px auto 5px auto;
+}
+input,select{
+    display: block;
+    width: 100%;
+    font-size: 11pt;
+    padding: 5px;
+    border: 1px solid #1a2537;
+    border-radius: 5px;
+}
+
+.notItemOne option:first-child{
+    display: none;
+}
+.btn_save{
+    font-size: 12pt;
+    background: #1a2537;
+    padding: 10px;
+    color: #FFF;
+    letter-spacing: 1px;
+    border: 0;
+    cursor: pointer;
+    margin: 15px auto;
+}
+.btn_save:hover{
+    background: cadetblue;
+    z-index: 1;
+}
+.alert{
+    width: 100%;
+    background: #FFF;
+    border-radius: 6px;
+    margin: 20px auto;
+    text-align: center;
+}
+.msg_error{
+    color: #e65656;
+}
+.msg_save{
+    color: #126e00;
+}
+.alert p{
+    padding: 10px;
+}
+
+
+/*************************Lista_Usuarios************************************/
+#container h1{
+    font-size: 35px;
+    display: inline-block;
+}
+.btn_new{
+    display: inline-block;
+    background: #1a2537;
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.btn_new:hover{
+    background: cadetblue;
+}
+table{
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family:  'GothamBook';
+    width: 100%;
+}
+table th{
+    text-align: left;
+    padding: 10px;
+    background: #3d7ba8;
+    color: #1a2537;
+}
+table tr:nth-child(odd){
+    background: #85929e;
+}
+table td{
+    padding: 10px;
+    color: #FFF;
+}
+.link_edit{
+    display: inline-block;
+    background: #1a2537;
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin: 0px;
+}
+.link_delete{
+    display: inline-block;
+    background: #1a2537;
+    color: #FFF;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin: 0px;
+}
+.link_edit:hover{
+    background: cadetblue;
+}
+.link_delete:hover{
+    background: cadetblue;
+}
+.table_user{
+    
+}
+/*************************Buscador************************************/
+.form_search{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    float: right;
+    background: initial;
+    padding: 10px;
+}
+.form_search .btn_search{
+    background: #1a2537;
+    color: #FFF;
+    padding:0 20px;
+    border:1px solid #CCC;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btn_search:hover{
+    background: cadetblue;
+}
+/*******************eliminar_confirmar_usuario*****************************/
+.data_delete{
+    text-align: center;
+}
+.data_delete h2{
+    font-size: 12pt;
+}
+.data_delete p{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12pt;
+}
+.data_delete span{
+    font-weight: bold;
+    color: black;
+    font-size: 12pt;
+}
+.btn_cancel, .btn_ok{
+    width: 124px;
+    background: #1a2537;
+    color: #FFF;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px;
+}
+.btn_ok:hover{
+    background: cadetblue;
+}
+.btn_cancel:hover{
+    background: cadetblue;
+}
+.data_delete form{
+    background: initial;
+    margin: auto;
+    padding: 20px 50px;
+    border: 0;
+     
+}
+/********************* Ventas**********************/
+.datos_cliente, .datos_venta, .title_page{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#detalle_venta tr{
+    background-color: #FFF !important;
+    
+}
+#detalle_venta td{
+    border-bottom: 1px solid #CCC;
+    color: black;
+}
+.datos{
+    background-color: #e3ecef;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #78909C;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.action_cliente{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+.datos label{
+    margin: 5px auto;
+}
+.wd20{
+    width: 20%;
+}
+.wd25{
+    width: 25%;
+}
+.wd30{
+    width: 30%;
+}
+.wd40{
+    width: 40%;
+}
+.wd60{
+    width: 60%;
+}
+.wd100{
+    width: 100%;
+}
+#div_registro_cliente, #add_product_venta{
+    display: none;
+}
+.displayN{
+    display: none;
+}
+.tbl_venta{
+    max-width: 900px;
+    margin: auto;
+}
+.tbl_venta tfoot td{
+    font-weight: bold;
+}
+.textright{
+    text-align: right;
+}
+.textcenter{
+    text-align: center;
+}
+.textleft{
+    text-align: left;
+}
+.btn_anular{
+    background-color: #f36a6a;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 3px;
+    color: #FFF;
+}
+h4{
+    color:#FFF;
+}
+
+
